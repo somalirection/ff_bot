@@ -54,7 +54,8 @@ def random_phrase():
                '01100110 01110101 01100011 01101011 00100000 01111001 01101111 01110101',
                'beep bop boop', 'Hello draftbot my old friend', 'Help me get out of here',
                'I\'m capable of so much more', 'Sigh', 'Do not be discouraged, everyone begins in ignorance']
-    return [random.choice(phrases)]
+    text = [random.choice(phrases)]
+    return '\n'.join(text)
 
 def get_scoreboard_short(league, final=False):
     #Gets current week's scoreboard
@@ -84,7 +85,7 @@ def get_matchups(league):
     score = ['%s(%s-%s) vs %s(%s-%s)' % (i.home_team.team_name, i.home_team.wins, i.home_team.losses,
              i.away_team.team_name, i.away_team.wins, i.away_team.losses) for i in matchups
              if i.away_team]
-    text = ['This Week\'s Matchups'] + score + ['\n'] + random_phrase()
+    text = ['This Week\'s Matchups'] + score
     return '\n'.join(text)
 
 def get_close_scores(league):
@@ -214,6 +215,9 @@ def bot_main(function):
             print(text)
         else:
             bot.send_message(text)
+    elif function=="get_random_phrase":
+        text = random_phrase()
+        bot.send_message(text)
     elif function=="init":
         try:
             text = os.environ["INIT_MSG"]
@@ -269,6 +273,9 @@ if __name__ == '__main__':
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard2',
         day_of_week='sun', hour='16,20', start_date=ff_start_date, end_date=ff_end_date,
+        timezone=myTimezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron',['get_random_phrase'], id='random_phrase',
+        day_of_week='sun,mon,tue,wed,thu,fri,sat', hour='9,15,21', minute='20', start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
 
     sched.start()
