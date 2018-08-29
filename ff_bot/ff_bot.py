@@ -362,8 +362,8 @@ if __name__ == '__main__':
         day_of_week='thu', hour=18, minute=40, start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_champ'], id='predict_champ',
-        day_of_week='thu', hour=17, minute=30, start_date=ff_start_date, end_date=(ff_start_date + datetime.timedelta(days=1)),
+        day_of_week='thu', hour=17, minute=30, start_date=ff_start_date, end_date=ff_start_date + datetime.timedelta(days=1),
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_spoob'], id='predict_spoob',
-        day_of_week='thu', hour=17, minute=30, start_date=ff_start_date, end_date=(ff_start_date + datetime.timedelta(days=1)),
+        day_of_week='thu', hour=17, minute=30, start_date=ff_start_date, end_date=ff_start_date + datetime.timedelta(days=1),
     sched.start()
