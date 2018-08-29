@@ -79,7 +79,7 @@ def random_phrase():
                'Cody won the Sweater Vest League after being removed for wanting to instate league fees.',
                'Adam set the record for most points in a season while missing the playoffs at a staggering 1643.9 earning him the Collin J Hennessey Sodium Chloride Award.',
                'Adam is undefeated head-to-head against Derek at a perfect 8-0.',
-               'Kendall has beaten Jamie in back-to-back post-seasons in 2016 and 2017.',
+               'Kendall beat Jamie in back-to-back post-seasons in 2016 and 2017.',
                'The Divisions were realigned in 2017',
                'Jamie won the East in 2015 with a 9-4 record.',
                'Josh won the West in 2015 with a 11-2 record.',
