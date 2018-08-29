@@ -87,14 +87,15 @@ def random_phrase():
                'In 2018 Adam flew from Denver to Atlanta to attend the draft.',
                ##Head-to-Head Matchups
                     ##Adam and Derek
-                    'Adam is undefeated head-to-head against Derek at a perfect 8-0.',
+                    'Adam is undefeated head-to-head against Derek in the modern era at a perfect 8-0.',
                     'Adam leads Derek in scoring in their head-to-head matchups 1008.8 - 790.2 with an average margin of victory of 27.325',
                     ##Kendall and Jamie
-                    'Jamie leads the Married Couple Matchup at 3-2.',
+                    'Jamie leads the Married Couple Matchup at 3-2 in the modern era.',
                     'Jamie is 3-0 in the regular season against Kendall.',
                     'Kendall is 2-0 in the post season against Jamie.',
                     ##Alex and Devon
-                    'Alex leads Devon head-to-head 4-2.',
+                    'Alex leads Devon head-to-head 4-2 in the moder era.',
+                    'Alex and Devon are split 0-0 since becoming an official rivalry',
                     'Alex has defeated Devon in four straight matchups.',
                     'Alex leads Devon in scoring in their head-to-head matchups 768.3 - 666.3.',
                ##Non-Stat(ish) things that will change
