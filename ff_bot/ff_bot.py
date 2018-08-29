@@ -2,6 +2,8 @@ import requests
 import json
 import os
 import random
+import time
+import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
 from espnff import League
 
@@ -77,6 +79,11 @@ def random_phrase():
                'Kendall has beaten Jamie in back-to-back post-seasons in 2016 and 2017'
                ]
     text = [random.choice(phrases)]
+    return '\n'.join(text)
+
+def player_name():
+    names = ['Adam','Alex','Boof','Cody','Derek','Devon','Jamie','Josh','Keller','Kendall']
+    text = [random.choice(names)]
     return '\n'.join(text)
 
 def get_scoreboard_short(league, final=False):
@@ -240,6 +247,36 @@ def bot_main(function):
     elif function=="get_random_phrase":
         text = random_phrase()
         bot.send_message(text)
+    elif function=="predict_high":
+        text = "I predict this weeks highest scorer will be..."
+        bot.send_message(text)
+        time.sleep(10)
+        text = player_name()
+        bot.send_message(text)
+    elif function=="predict_low":
+        text = "I predict this weeks lowest scorer will be..."
+        bot.send_message(text)
+        time.sleep(10)
+        text = player_name()
+        bot.send_message(text)
+    elif function=="predict_td":
+        text = "I predict the most touchdowns this week will be scored by..."
+        bot.send_message(text)
+        time.sleep(10)
+        text = player_name()
+        bot.send_message(text)
+    elif function=="predict_champ":
+        text = "I predict this years champion will be..."
+        bot.send_message(text)
+        time.sleep(10)
+        text = player_name()
+        bot.send_message(text)
+    elif function=="predict_spoob":
+        text = "I predict this years Spooby will be..."
+        bot.send_message(text)
+        time.sleep(10)
+        text = player_name()
+        bot.send_message(text)
     elif function=="init":
         try:
             text = os.environ["INIT_MSG"]
@@ -254,14 +291,17 @@ def bot_main(function):
 
 if __name__ == '__main__':
     try:
-        ff_start_date = os.environ["START_DATE"]
+        ff_start_date = os.environ["SEASON_START_DATE"]
     except KeyError:
         ff_start_date='2018-09-05'
-
+    try:
+        fact_start_date = os.environ["FACTS_START_DATE"]
+    except KeyError:
+        fact_start_date='2018-08-23'
     try:
         ff_end_date = os.environ["END_DATE"]
     except KeyError:
-        ff_end_date='201-12-26'
+        ff_end_date='2018-12-30'
 
     try:
         myTimezone = os.environ["TIMEZONE"]
@@ -296,8 +336,25 @@ if __name__ == '__main__':
     sched.add_job(bot_main, 'cron', ['get_scoreboard_short'], id='scoreboard2',
         day_of_week='sun', hour='16,20', start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
-    sched.add_job(bot_main, 'cron',['get_random_phrase'], id='random_phrase',
-        day_of_week='sun,mon,tue,wed,thu,fri,sat', hour='9,15,21', minute='20', start_date=ff_start_date, end_date=ff_end_date,
+    ###Fun Facts
+    sched.add_job(bot_main, 'cron', ['get_random_phrase'], id='random_phrase',
+        day_of_week='sun,mon,tue,wed,thu,fri,sat', hour='9,15,21', minute='20', start_date=fact_start_date, end_date=ff_end_date,
+        timezone=myTimezone, replace_existing=True)
+    ###Predictions
+    sched.add_job(bot_main, 'cron', ['predict_td'], id='predict_td',
+        day_of_week='Thu', hour=8, minute=10, start_date=ff_start_date, end_date=ff_end_date,
+        timezone=myTimezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron', ['predict_low'], id='predict_low',
+        day_of_week='thu', hour=14, minute=25, start_date=ff_start_date, end_date=ff_end_date,
+        timezone=myTimezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron', ['predict_high'], id='predict_high',
+        day_of_week='thu', hour=18, minute=40, start_date=ff_start_date, end_date=ff_end_date,
+        timezone=myTimezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron', ['predict_champ'], id='predict_champ',
+        day_of_week='thu', hour=17, minute=30, start_date=ff_start_date, end_date=(ff_start_date + datetime.timedelta(days=1)),
+        timezone=myTimezone, replace_existing=True)
+    sched.add_job(bot_main, 'cron', ['predict_spoob'], id='predict_spoob',
+        day_of_week='thu', hour=17, minute=30, start_date=ff_start_date, end_date=(ff_start_date + datetime.timedelta(days=1)),
         timezone=myTimezone, replace_existing=True)
 
     sched.start()
