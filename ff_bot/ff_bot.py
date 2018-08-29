@@ -72,8 +72,8 @@ def random_phrase():
                'Colin was removed from the Sweater Vest League for winning a championship',
                'All Hail the Deyton was once known as the Sweater Vest League and has three unrecognized champions',
                'Cody won the Sweater Vest League after being removed for wanting to instate league fees',
-               'Adam set the record for most points in a season while missing the playoffs at a staggering 1643.9 earning him the Collin J Hennessey Sodium Chloride Award'
-               'Adam is undefeated head-to-head against Derek at a perfect 8-0'
+               'Adam set the record for most points in a season while missing the playoffs at a staggering 1643.9 earning him the Collin J Hennessey Sodium Chloride Award',
+               'Adam is undefeated head-to-head against Derek at a perfect 8-0',
                'Kendall has beaten Jamie in back-to-back post-seasons in 2016 and 2017'
                ]
     text = [random.choice(phrases)]
