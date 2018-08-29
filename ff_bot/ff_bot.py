@@ -111,7 +111,7 @@ def random_phrase():
                'Jamie currently holds the record for fewest point in a season at 1222.1(2017). Ouch!'
                'Keller currently owns the record for most points in a week at 192.9.',
                'Devon mustered a staggering 46.9 points in week 9 of 2016 to set the lowest point total ever in a single week.',
-               'In week 12 of 2017 Keller set the record for largest win margin by absolutely decimating Derek 192.9-83.4. A win margin of +109.5.',
+               'In week 12 of 2017 Keller set the record for largest win margin by absolutely decimating Derek 192.9 - 83.4. A win margin of +109.5.',
                'Keller set the record for most points in a week in week 12 of 2017 with a whopping 192.7.',
                'The best Monday Night Miracle in league history came in week 8 of 2016 when Adam enter Monday night trailing Devon by 43.8 points and won. Good job Devon you incompetent fuck.',
                'Cody set the record for most bench points in a loss at 83.4. Talk about mismanagement!',
