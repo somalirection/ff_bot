@@ -98,9 +98,15 @@ def random_phrase():
                     'Alex and Devon are split 0-0 since becoming an official rivalry',
                     'Alex has defeated Devon in four straight matchups.',
                     'Alex leads Devon in scoring in their head-to-head matchups 768.3 - 666.3.',
+               ##Team names
+               'Alex got his Team name (Falcoholic) by combining his favorite Team (the Falcons) with his favorite activity (being an alcoholic).',
+               'Devon chose his name (Morningwood Lumber Company) becuase it\'s a dick joke.',
+               'Jamie based his team name (Watt me Whip, Watt Me JJ) on a song that was relevant for 2 months in 2014 and has been too lazy to change it. He isnt even a Texans fan and we dont\'t have IDPs',
+               'Derek picked his team name (Fk U) becuase it\'s fuck you with a middle finger emoji and he\'s Derek',
+               'Kendall\'s team name is \'Big TD Commitee\' and no one know why.',
                ##Non-Stat(ish) things that will change
                'Jamie is the only person to have won both The Deyton and The Spooby Shitter.',
-               'Jamie currently holds the record for longest active streak with the same team name at 4 season (Watt Me Whip Watt Me JJ). Historians believe it is a reference to some sort of poem.',
+               'Devon currently holds the record for longest active streak with the same team name at 4 season (Morningwood Lumber Company). It\'s a dick joke.',
                ##Statistical records that may change
                'Jamie currently holds the record for fewest point in a season at 1222.1(2017). Ouch!'
                'Keller currently owns the record for most points in a week at 192.9.',
