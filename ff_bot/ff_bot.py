@@ -275,7 +275,7 @@ if __name__ == '__main__':
         day_of_week='sun', hour='16,20', start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron',['get_random_phrase'], id='random_phrase',
-        day_of_week='sun,mon,tue,wed,thu,fri,sat', hour='9,15,21', minute='20', start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='sun,mon,tue,wed,thu,fri,sat', hour='9,15,21', minute='20,40', start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
 
     sched.start()
