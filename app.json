@@ -31,6 +31,10 @@
       "description": "Season Start Date",
       "value": "2018-09-05"
     },
+    "FACTS_START_DATE": {
+      "description": "fun facts start date",
+      "value": "2018-08-22"
+    },
     "END_DATE": {
       "description": "Season End Date",
       "value": "2018-12-26"
