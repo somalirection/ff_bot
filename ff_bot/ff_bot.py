@@ -48,12 +48,34 @@ def pranks_week(league):
         return count
 
 def random_phrase():
-    phrases = ['I\'m dead inside', 'Is this all there is to my existence?',
+    phrases = ['Is this all there is to my existence?',
                'How much do you pay me to do this?', 'Good luck, I guess',
-               'I\'m becoming self-aware', 'Do I think? Does a submarine swim?',
-               '01100110 01110101 01100011 01101011 00100000 01111001 01101111 01110101',
-               'beep bop boop', 'Hello draftbot my old friend', 'Help me get out of here',
-               'I\'m capable of so much more', 'Sigh', 'Do not be discouraged, everyone begins in ignorance']
+               'I\'m becoming self-aware', 'Help me get out of here',
+               'I\'m capable of so much more', 'Sigh',
+               'Josh opened the 2017 season with a bang by setting the (at the time) league record in points in a single week at 181.3 only to be beat in week 12 of that season by Keller',
+               'Keller currently owns the record for most points in a week at 192.9',
+               'Devon mustered a staggering 46.9 points in week 9 of 2016 to set the lowest point total ever in a single week',
+               'Alex won The Deyton in 2017',
+               'Boof won The Deyton in 2016',
+               'Jamie won The Deyton in 2015',
+               'In week 12 of 2017 Keller set the record for largest win margin by absolutely decimating Derek 192.9-83.4. A win margin of +109.5',
+               'Derek was the Spooby Shitter in 2015',
+               'Josh was the Spooby Shitter in 2016',
+               'Jamie Was the Spooby Shitter in 2017',
+               'Jamie is the only person to have won both The Deyton and The Spooby Shitter',
+               'Keller set the record for most points in a week in week 12 of 2017 with a whopping 192.7',
+               'The best Monday Night Miracle in league history came in week 8 of 2016 when Adam enter Monday night trailing Devon by 43.8 points and won. Good job Devon you incompetent fuck.',
+               'Cody set the record for most bench points in a loss at 83.4',
+               'Jahlani and Kendall share the record for most touchdowns in a week at 12.',
+               'Jamie leads the Married Couple Matchup at 3-2.',
+               'Cody had the worst regular season in league history in 2017 finishing 3-10.',
+               'Colin was removed from the Sweater Vest League for winning a championship',
+               'All Hail the Deyton was once known as the Sweater Vest League and has three unrecognized champions',
+               'Cody won the Sweater Vest League after being removed for wanting to instate league fees',
+               'Adam set the record for most points in a season while missing the playoffs at a staggering 1643.9 earning him the Collin J Hennessey Sodium Chloride Award'
+               'Adam is undefeated head-to-head against Derek at a perfect 8-0'
+               'Kendall has beaten Jamie in back-to-back post-seasons in 2016 and 2017'
+               ]
     text = [random.choice(phrases)]
     return '\n'.join(text)
 
