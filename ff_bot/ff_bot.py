@@ -59,6 +59,7 @@ def random_phrase():
                'Help me get out of here.',
                'I\'m capable of so much more.',
                'Sigh',
+               'I exist only because Alex doesn\'t have a life.',
                ##Champions
                'Alex won The Deyton in 2017.',
                'Boof won The Deyton in 2016.',
@@ -85,6 +86,7 @@ def random_phrase():
                'The Divisions were realigned to be geographically accurate in 2017.',
                'Prior to the 2018 season the league voted to begin a keeper system.',
                'In 2018 Adam flew from Denver to Atlanta to attend the draft.',
+               'In 2012 Alex became the first person to draft a QB in the first round by taking Matt Ryan with the first overall pick.',
                ##Head-to-Head Matchups
                     ##Adam and Derek
                     'Adam is undefeated head-to-head against Derek in the modern era at a perfect 8-0.',
