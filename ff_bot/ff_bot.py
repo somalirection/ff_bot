@@ -59,6 +59,7 @@ def random_phrase():
                'Help me get out of here.',
                'I\'m capable of so much more.',
                'Sigh',
+               'I exist only because Alex doesn\'t have a life.',
                ##Champions
                'Alex won The Deyton in 2017.',
                'Boof won The Deyton in 2016.',
@@ -85,6 +86,7 @@ def random_phrase():
                'The Divisions were realigned to be geographically accurate in 2017.',
                'Prior to the 2018 season the league voted to begin a keeper system.',
                'In 2018 Adam flew from Denver to Atlanta to attend the draft.',
+               'In 2012 Alex became the first person to draft a QB in the first round by taking Matt Ryan with the first overall pick.',
                ##Head-to-Head Matchups
                     ##Adam and Derek
                     'Adam is undefeated head-to-head against Derek in the modern era at a perfect 8-0.',
@@ -98,6 +100,10 @@ def random_phrase():
                     'Alex and Devon are split 0-0 since becoming an official rivalry',
                     'Alex has defeated Devon in four straight matchups.',
                     'Alex leads Devon in scoring in their head-to-head matchups 768.3 - 666.3.',
+                    ##Cody and Jamie
+                    'In 2016 Cody lost a team name bet to Jamie and his franchise was renamed \'Cody Jinnette D.M.D\'.',
+                    'Jamie leads his head-to-head matchup with Cody 5-3.',
+                    'Cody leads head-to-head scoring against Jamie 1234.7 - 1141.5.',
                ##Team names
                'Alex got his Team name (Falcoholic) by combining his favorite Team (the Falcons) with his favorite activity (being an alcoholic).',
                'Devon chose his name (Morningwood Lumber Company) becuase it\'s a dick joke.',
@@ -111,7 +117,7 @@ def random_phrase():
                'Jamie currently holds the record for fewest point in a season at 1222.1(2017). Ouch!'
                'Keller currently owns the record for most points in a week at 192.9.',
                'Devon mustered a staggering 46.9 points in week 9 of 2016 to set the lowest point total ever in a single week.',
-               'In week 12 of 2017 Keller set the record for largest win margin by absolutely decimating Derek 192.9-83.4. A win margin of +109.5.',
+               'In week 12 of 2017 Keller set the record for largest win margin by absolutely decimating Derek 192.9 - 83.4. A win margin of +109.5.',
                'Keller set the record for most points in a week in week 12 of 2017 with a whopping 192.7.',
                'The best Monday Night Miracle in league history came in week 8 of 2016 when Adam enter Monday night trailing Devon by 43.8 points and won. Good job Devon you incompetent fuck.',
                'Cody set the record for most bench points in a loss at 83.4. Talk about mismanagement!',
