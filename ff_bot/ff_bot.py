@@ -100,6 +100,10 @@ def random_phrase():
                     'Alex and Devon are split 0-0 since becoming an official rivalry',
                     'Alex has defeated Devon in four straight matchups.',
                     'Alex leads Devon in scoring in their head-to-head matchups 768.3 - 666.3.',
+                    ##Cody and Jamie
+                    'In 2016 Cody lost a team name bet to Jamie and his franchise was renamed \'Cody Jinnette D.M.D\'.',
+                    'Jamie leads his head-to-head matchup with Cody 5-3.',
+                    'Cody leads head-to-head scoring against Jamie 1234.7 - 1141.5.',
                ##Team names
                'Alex got his Team name (Falcoholic) by combining his favorite Team (the Falcons) with his favorite activity (being an alcoholic).',
                'Devon chose his name (Morningwood Lumber Company) becuase it\'s a dick joke.',
