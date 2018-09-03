@@ -105,7 +105,7 @@ def random_phrase():
                     'Jamie leads his head-to-head matchup with Cody 5-3.',
                     'Cody leads head-to-head scoring against Jamie 1234.7 - 1141.5.',
                ##Team names
-               'Alex got his Team name (Falcoholic) by combining his favorite Team (the Falcons) with his favorite activity (being an alcoholic).',
+               'Alex got his team name (Falcoholic) by combining his favorite team (the Falcons) with his favorite activity (being an alcoholic).',
                'Devon chose his name (Morningwood Lumber Company) becuase it\'s a dick joke.',
                'Jamie based his team name (Watt me Whip, Watt Me JJ) on a song that was relevant for 2 months in 2014 and has been too lazy to change it. He isnt even a Texans fan and we dont\'t have IDPs',
                'Derek picked his team name (Fk U) becuase it\'s fuck you with a middle finger emoji and he\'s Derek',
