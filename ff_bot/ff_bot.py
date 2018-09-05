@@ -76,7 +76,7 @@ def random_phrase():
                'Alex won the East in 2017 with a 10-3 record.',
                'Adam won the West in 2017 with a 9-4 record.',
                ##Things that wont change
-               'Josh opened the 2017 season with a bang by setting the (at the time) league record in points in a single week at 181.3 only to be beat in week 12 of that season by Keller.',
+               'Josh opened the 2017 season with a bang by setting the (at the time) league record in points in a single week at 181.3 only to be beaten in week 12 of that season by Keller.',
                'Colin was removed from the Sweater Vest League for winning a championship in 2016.',
                'All Hail the Deyton was once known as the Sweater Vest League and has three unrecognized champions.',
                'The league was renamed from \'The Sweater Vest League\' to \'All Hail the Deyton\' prior to the 2016 season.',
