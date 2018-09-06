@@ -405,7 +405,7 @@ if __name__ == '__main__':
         day_of_week='thu', hour=20, minute=10, start_date=ff_start_date, end_date=ff_day_after_start,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_spoob'], id='predict_spoob',
-        day_of_week='thu', hour=20, minute=05, start_date=ff_start_date, end_date=ff_day_after_start,
+        day_of_week='thu', hour=20, minute=5, start_date=ff_start_date, end_date=ff_day_after_start,
         timezone=myTimezone, replace_existing=True)
 
     sched.start()
