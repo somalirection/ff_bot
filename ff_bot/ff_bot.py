@@ -403,4 +403,5 @@ if __name__ == '__main__':
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_spoob'], id='predict_spoob',
         day_of_week='thu', hour=19, minute=00, start_date=ff_start_date, end_date=ff_start_date,
+
     sched.start()
