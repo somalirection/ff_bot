@@ -316,13 +316,13 @@ def bot_main(function):
     elif function=="predict_champ":
         text = "I predict this years champion will be..."
         bot.send_message(text)
-        time.sleep(10)
+        time.sleep(45)
         text = player_name()
         bot.send_message(text)
     elif function=="predict_spoob":
         text = "I predict this years Spooby will be..."
         bot.send_message(text)
-        time.sleep(10)
+        time.sleep(45)
         text = player_name()
         bot.send_message(text)
     elif function=="init":
