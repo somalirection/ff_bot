@@ -245,6 +245,7 @@ def get_trophies(league):
     return '\n'.join(text)
 
 def bot_main(function):
+
     bot_id = os.environ["BOT_ID"]
     league_id = os.environ["LEAGUE_ID"]
 
@@ -401,10 +402,10 @@ if __name__ == '__main__':
         day_of_week='thu', hour=18, minute=40, start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_champ'], id='predict_champ',
-        day_of_week='thu', hour=19, minute=20, start_date=ff_start_date, end_date=ff_day_after_start,
+        day_of_week='thu', hour=19, minute=45, start_date=ff_start_date, end_date=ff_day_after_start,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_spoob'], id='predict_spoob',
-        day_of_week='thu', hour=19, minute=25, start_date=ff_start_date, end_date=ff_day_after_start,
+        day_of_week='thu', hour=19, minute=40, start_date=ff_start_date, end_date=ff_day_after_start,
         timezone=myTimezone, replace_existing=True)
 
     sched.start()
