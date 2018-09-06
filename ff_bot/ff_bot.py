@@ -370,7 +370,7 @@ if __name__ == '__main__':
     #score update:                       sunday at 1pm, 4pm, 8pm.
 
     sched.add_job(bot_main, 'cron', ['get_power_rankings'], id='power_rankings',
-        day_of_week='tue', hour=19, minute=30, start_date=ff_start_date, end_date=ff_end_date,
+        day_of_week='tue', hour=20, minute=00, start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['get_matchups'], id='matchups',
         day_of_week='thu', hour=19, minute=30, start_date=ff_start_date, end_date=ff_end_date,
@@ -402,10 +402,10 @@ if __name__ == '__main__':
         day_of_week='thu', hour=18, minute=40, start_date=ff_start_date, end_date=ff_end_date,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_champ'], id='predict_champ',
-        day_of_week='thu', hour=19, minute=45, start_date=ff_start_date, end_date=ff_day_after_start,
+        day_of_week='thu', hour=20, minute=10, start_date=ff_start_date, end_date=ff_day_after_start,
         timezone=myTimezone, replace_existing=True)
     sched.add_job(bot_main, 'cron', ['predict_spoob'], id='predict_spoob',
-        day_of_week='thu', hour=19, minute=40, start_date=ff_start_date, end_date=ff_day_after_start,
+        day_of_week='thu', hour=20, minute=05, start_date=ff_start_date, end_date=ff_day_after_start,
         timezone=myTimezone, replace_existing=True)
 
     sched.start()
