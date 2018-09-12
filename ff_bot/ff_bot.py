@@ -123,6 +123,7 @@ def random_phrase():
                'Cody set the record for most bench points in a loss at 83.4. Talk about mismanagement!',
                'Jahlani and Kendall share the record for most touchdowns in a week at 12.',
                'Cody(2017) and Hunter(2015) are tied for worst regular season in league history finishing 3-10.',
+               ############# No New Facts Below This Line ##########################
                'Adam set the record for most points in a season while missing the playoffs at a staggering 1643.9 earning him the Collin J Hennessey Sodium Chloride Award.'
                ]
 
@@ -362,7 +363,7 @@ if __name__ == '__main__':
     bot_main("init")
     sched = BlockingScheduler(job_defaults={'misfire_grace_time': 15*60})
 
-    #power rankings:                     tuesday evening at 6:30pm.
+    #power rankings:                     tuesday morning at 8:00am.
     #matchups:                           thursday evening at 7:30pm.
     #close scores (within 15.99 points): monday evening at 6:30pm.
     #trophies:                           tuesday morning at 7:30am.
